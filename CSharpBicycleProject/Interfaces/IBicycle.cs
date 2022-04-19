@@ -8,6 +8,7 @@ internal interface IBicycle
     int StartNumber { get; }
     string Model { get; }
     string Style { get; }
+    string SerialNumber { get; set;}
 
 
     void Paint(BikeColor color);
