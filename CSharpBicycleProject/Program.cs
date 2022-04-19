@@ -2,6 +2,17 @@
 
 //TestingModel();
 //SerialGeneratorTester();
+//TestBikeOptions();
+
+// Testing BikeOptions
+void TestBikeOptions()
+{
+    Touring touring = new Touring(new NormalWheel());
+    LeatherGrips grips = new LeatherGrips();
+    decimal total = touring.Price + grips.OptionPrice;
+    Console.WriteLine($"Bike price is {touring.Price:C} and leather grips are {grips.OptionPrice:C}.");
+    Console.WriteLine($"The total price is {total:C}.");
+}
 
 // Testing Serial Number Generator
 void SerialGeneratorTester()
@@ -21,7 +32,6 @@ void SerialGeneratorTester()
     generator2.SetModelAndStart(downhill.Model, generator.RecentNumber);
     Console.WriteLine($"Next generator2 Serial {generator2.GetNextSerial()}");
     Console.WriteLine($"Next generator2 Serial {generator2.GetNextSerial()}");
-
 }
 
 // Testing Base Model
