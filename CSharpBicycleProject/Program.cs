@@ -3,6 +3,13 @@
 //TestingModel();
 //SerialGeneratorTester();
 //TestBikeOptions();
+TestProgram();
+
+void TestProgram()
+{
+    SampleOrder sampleOrder = new SampleOrder();
+    sampleOrder.WelcomeMessage();
+}
 
 // Testing BikeOptions
 void TestBikeOptions()
